@@ -1,0 +1,14 @@
+.exchange-form {
+  width: 100%;
+  padding-left: rem(33);
+}
+
+.exchange-form__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.exchange-form__accept {
+  margin-right: rem(-79);
+}

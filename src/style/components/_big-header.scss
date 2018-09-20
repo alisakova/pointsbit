@@ -1,0 +1,13 @@
+.big-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(133);
+  &_margin-bottom-96 {
+    margin-bottom: rem(96);
+  }
+}
+
+.big-header__logo {
+  max-width: rem(389);
+}

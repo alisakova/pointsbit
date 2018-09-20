@@ -1,5 +1,5 @@
 @import "variables";
-// @import "mixin";
+@import "mixin";
 @import "util";
 
 @font-face {
@@ -15,7 +15,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 html {
   height: 100%;
@@ -37,7 +36,7 @@ body {
   background: none;
   color: $black;
   -webkit-text-size-adjust: none;
-  background: $main-gray;
+  // background: $main-gray;
 }
 
 * {
@@ -62,6 +61,13 @@ ul {
   list-style-type: none;
 }
 
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: rem(1210);
   padding: 0 rem(20);
@@ -76,35 +82,31 @@ h1 {
   }
   line-height: 1.2;
   margin: 0;
-  text-transform: uppercase;
-  @media (max-width: 540px) {
-    font-size: rem(22);
-  }
 }
 
-h2 {
-  font: {
-    size: rem(36);
-    family: $head-font;
-    weight: 400;
-  }
-  line-height: 1.2;
-  margin: 0;
-  text-transform: uppercase;
-  @media (max-width: 540px) {
-    font-size: rem(22);
-  }
-}
-
-p {
-  line-height: 1.875;
-  text-align: left;
-  margin: 0;
-  font: {
-    size: rem(16);
-    family: $text-font;
-  }
-}
+// h2 {
+//   font: {
+//     size: rem(36);
+//     family: $head-font;
+//     weight: 400;
+//   }
+//   line-height: 1.2;
+//   margin: 0;
+//   text-transform: uppercase;
+//   @media (max-width: 540px) {
+//     font-size: rem(22);
+//   }
+// }
+//
+// p {
+//   line-height: 1.875;
+//   text-align: left;
+//   margin: 0;
+//   font: {
+//     size: rem(16);
+//     family: $text-font;
+//   }
+// }
 
 img {
   display: block;
@@ -140,3 +142,15 @@ img {
 // 		font-size: 24px;
 // 	}
 // }
+
+@import "components/first-slide";
+@import "components/button";
+@import "components/nav";
+@import "components/big-header";
+@import "components/footer";
+@import "components/pages";
+@import "components/grid";
+@import "components/form";
+@import "components/exchange-form";
+@import "components/exchange";
+@import "components/pages-counter";

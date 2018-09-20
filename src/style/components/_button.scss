@@ -1,0 +1,24 @@
+.button {
+  background: $bright-blue;
+  padding: rem(19 76 22);
+  font-size: rem(24);
+  color: #fff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: rem(37);
+  transition: box-shadow 250ms;
+  &:hover, &:focus {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  &_margin-bottom-33 {
+    margin-bottom: rem(33);
+  }
+  &_margin-right-45 {
+    margin-right: rem(-45);
+  }
+  &_font-size-34 {
+    font: {
+      size: rem(34);
+      weight: 500;
+    }
+  }
+ }

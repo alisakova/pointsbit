@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $gray;
+  font-size: rem(20);
+}
+
+.nav__link {
+  &:not(:last-child) {
+    margin-right: rem(46);
+  }
+  &:hover, &:focus {
+    color: darken($gray, 30%);
+  }
+}
