@@ -15,13 +15,17 @@
 </head>
 
 <body>
-	<section class="first-slide">
-	  <div class="first-slide__content">
-	    @import "big-header.html"
-	    @import "index/first-slide.html"
-			@import "footer.html"
-	  </div>
-	</section>
-	<!-- <script src="js/main.min.js"></script> -->
+	<div class="wrapper background-layout">
+		@import "index/big-header.html"
+		<div class="content">
+			<main class="first-slide">
+				<div class="first-slide__content">
+					@import "index/first-slide.html"
+				</div>
+			</main>
+		</div>
+		@import "footer.html"
+	</div>
+	<script src="js/main.min.js"></script>
 </body>
 </html>

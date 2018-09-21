@@ -10,6 +10,13 @@
 }
 
 @font-face {
+  font-family: "SegoeUiLight";
+  src: url("../fonts/SegoeUi/SegoeUiLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "SegoeUiBold";
   src: url("../fonts/SegoeUi/SegoeUiBold.ttf") format("truetype");
   font-weight: normal;
@@ -84,6 +91,16 @@ h1 {
   margin: 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
 // h2 {
 //   font: {
 //     size: rem(36);
@@ -98,15 +115,15 @@ h1 {
 //   }
 // }
 //
-// p {
-//   line-height: 1.875;
-//   text-align: left;
-//   margin: 0;
-//   font: {
-//     size: rem(16);
-//     family: $text-font;
-//   }
-// }
+p {
+  line-height: 1.4;
+  text-align: left;
+  margin: 0;
+  font: {
+    size: rem(20);
+    family: $main-font;
+  }
+}
 
 img {
   display: block;
@@ -145,12 +162,22 @@ img {
 
 @import "components/first-slide";
 @import "components/button";
+@import "components/action-button";
 @import "components/nav";
 @import "components/big-header";
 @import "components/footer";
+@import "components/accordion";
 @import "components/pages";
 @import "components/grid";
 @import "components/form";
+@import "components/wallet-form";
 @import "components/exchange-form";
 @import "components/exchange";
+@import "components/tabs";
+@import "components/get-wallet";
+@import "components/popup-block";
 @import "components/pages-counter";
+@import "components/background-layout";
+@import "components/contact-container";
+@import "components/contact-form";
+@import "components/contacts";

@@ -2,15 +2,26 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: $gray;
-  font-size: rem(20);
 }
 
-.nav__link {
+.nav__item {
   &:not(:last-child) {
     margin-right: rem(46);
   }
+  &_relative {
+    position: relative;
+  }
+}
+
+.nav__link {
+  display: block;
+  color: $gray;
+  font-size: rem(20);
+  font-family: $main-font;
   &:hover, &:focus {
-    color: darken($gray, 30%);
+    color: darken($gray, 20%);
+  }
+  &_active {
+    font-weight: 700;
   }
 }

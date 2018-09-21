@@ -16,14 +16,18 @@
 </head>
 
 <body>
-	<section class="first-slide">
-	  <div class="first-slide__content exchange">
-	    @import "exchange/big-header.html"
-	    @import "exchange/form.html"
-			<a href="" class="first-slide__button first-slide__button_alt">Get Wallet</a>
-			@import "exchange/footer.html"
-	  </div>
-	</section>
-	<!-- <script src="js/main.min.js"></script> -->
+	<div class="wrapper background-layout">
+		<div class="content">
+			@import "exchange/big-header.html"
+			<main class="first-slide">
+				<div class="first-slide__content exchange">
+				  @import "exchange/form.html"
+					@import "exchange/get-wallet.html"
+				</div>
+			</main>
+		</div>
+		@import "exchange/footer.html"
+	</div>
+	<script src="js/main.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+.background-layout {
+  background: url('../img/index-bg.png') no-repeat;
+  background-position: -70% center;
+  min-height: 100vh;
+  position: relative;
+  &_with-back {
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: #fff;
+      opacity: 0.92;
+      width: 100%;
+      height: calc(100% - 13.125rem);
+      z-index: 1;
+      top: rem(210);
+    }
+  }
+}
+
+.background-layout__content {
+  padding: rem(19 54 0 0);
+  position: relative;
+  z-index: 5;
+}

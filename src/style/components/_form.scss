@@ -3,22 +3,31 @@
   border: none;
   border-radius: 0;
   background: transparent;
+  -webkit-appearance: none;
+}
+
+%default-text {
+  color: #43425d;
+  font: {
+    size: rem(15);
+    family: $roboto;
+  }
 }
 
 .form__item {
   margin-bottom: rem(44);
 }
 
+.form__button {
+  display: flex;
+  justify-content: center;
+}
+
 .form__input {
   width: 100%;
   padding: rem(2 5 6 5);
-  -webkit-appearance: none;
   border-bottom: 2px solid $light-gray;
-  color: #43425d;
-  font: {
-    size: rem(15);
-    family: $roboto;
-  }
+  @extend %default-text;
   @extend %default-reset;
   @include input-placeholder {
     color: #43425d;
@@ -33,16 +42,43 @@
   }
   color: $blue;
   margin-right: rem(14);
+  transition: color 250ms;
+  cursor: pointer;
+  &:hover, &:focus {
+    color: darken($blue, 20%);
+  }
 }
 
 .form__checkbox {
   background: #fff;
+  margin-right: rem(10);
+}
+
+.form__accept {
+  &_margin-right {
+    margin-right: rem(-79);
+  }
+}
+
+.form__textarea {
+  min-height: rem(200);
+  max-height: rem(400);
+  resize: vertical;
+  padding: rem(2 5 6 5);
+  border: none;
+  border-bottom: 2px solid $light-gray;
+  background: transparent;
+  width: 100%;
+  @extend %default-text;
+  @include input-placeholder {
+    color: #43425d;
+  }
 }
 
 .form__select {
   min-width: rem(112);
   max-width: rem(112);
-  padding: rem(2 30 6 0);
+  padding: rem(2 30 6 5);
   border-bottom: 2px solid $light-gray;
   color: #43425d;
   @extend %default-reset;
@@ -50,14 +86,9 @@
     size: rem(15);
     family: $roboto;
   }
-  &:after {
-    content: '';
-    position: absolute;
-    right: 11;
-    top: 50%;
-    transform: translateY(-50%);
-    border-style: solid;
-    border-width: 11px 10px 0 10px;
-    border-color: $purple transparent transparent transparent;
+  &_max-width-none {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
   }
 }

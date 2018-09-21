@@ -51,7 +51,7 @@ var config = {
   tunnel: true,
   host: "localhost",
   port: 9000,
-  logPrefix: "IceTron",
+  logPrefix: "PointsBit",
   fallback: "build/index.html"
 };
 

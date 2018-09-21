@@ -1,0 +1,23 @@
+.wallet-form {
+  top: rem(35);
+  right: 0;
+}
+
+.wallet-form__actions {
+  margin-bottom: rem(63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $link-blue;
+  padding-right: rem(21);
+}
+
+.wallet-form__forgot-link {
+  font: {
+    family: $roboto;
+    size: rem(13);
+  }
+  &:hover, &:focus {
+    color: darken($link-blue, 20%);
+  }
+}

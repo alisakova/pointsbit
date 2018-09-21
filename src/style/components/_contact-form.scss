@@ -1,0 +1,20 @@
+.contact-form {
+  max-width: rem(693);
+  flex-basis: 100%;
+}
+
+.contact-form__content {
+  background: #f4f6fa;
+  padding: rem(10 25 25);
+  margin-bottom: rem(13);
+}
+
+.contact-form__title {
+  font: {
+    size: rem(22);
+    weight: 700;
+    family: $head-font;
+  }
+  color: $gray;
+  margin-bottom: rem(40);
+}

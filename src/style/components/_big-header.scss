@@ -2,9 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: rem(133);
-  &_margin-bottom-96 {
-    margin-bottom: rem(96);
+  padding: rem(79 108 133 38);
+  &_padding-bottom-36 {
+    padding-bottom: rem(36);
+  }
+  &_padding {
+    padding: rem(79 108 20 38);
   }
 }
 
