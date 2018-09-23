@@ -1,0 +1,31 @@
+$nav-link-color: #576271;
+
+.aside-nav {
+  padding-top: rem(160);
+}
+
+.aside-nav__item {
+  font: {
+    size: rem(24);
+    family: $roboto;
+    weight: 300;
+  }
+  color: $nav-link-color;
+}
+
+.aside-nav__link {
+  display: block;
+  padding: rem(17 15 15 59);
+  position: relative;
+  &_active {
+    &:after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: rem(10);
+      background: $dashboard-blue;
+      left: 0;
+      top: 0;
+    }
+  }
+}

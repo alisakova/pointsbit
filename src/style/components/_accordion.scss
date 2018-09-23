@@ -9,14 +9,15 @@
     font-weight: 700;
   }
   &:before {
-    content: '>';
+    content: '';
+    background: url('../img/arrow-left.svg') no-repeat center center;
+    background-size: contain;
+    width: rem(25);
+    height: rem(25);
     position: absolute;
-    color: $black;
-    font: {
-      size: rem(26);
-      weight: 700;
-    }
     left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

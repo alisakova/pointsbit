@@ -1,0 +1,36 @@
+$indicator-bg: #c2d7e8;
+$indicator-active-bg: #69c113;
+$data-color: #6a829a;
+$data-active-color: #0f9af8;
+
+.data {
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+.data__indicator {
+  width: rem(60);
+  height: rem(12);
+  background-color: $indicator-bg;
+  opacity: 0.66;
+  border-radius: 3px;
+  margin-bottom: rem(8);
+  transition: background-color 250ms;
+  &_active {
+    background-color: $indicator-active-bg;
+  }
+}
+
+.data__name {
+  font: {
+    size: rem(16);
+    weight: 400;
+  }
+  text-align: left;
+  color: $data-color;
+  transition: color 250ms;
+  &_active {
+    color: $data-active-color;
+  }
+}

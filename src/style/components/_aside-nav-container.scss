@@ -1,0 +1,20 @@
+.aside-nav-container {
+  min-height: calc(100vh - 9.9375rem);
+  background: #fff;
+}
+
+.aside-nav-container__user {
+  background: $dark-blue;
+  color: #fff;
+  font: {
+    size: rem(18);
+    family: $roboto;
+    weight: 500;
+  }
+  padding: rem(49 48 50 34);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.aside-nav-container__link {
+  display: block;
+}

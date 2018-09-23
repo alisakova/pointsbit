@@ -1,7 +1,7 @@
 <header class="big-header big-header_padding-bottom-36">
-  <div class="big-header__logo">
+  <a href="index.html" class="big-header__logo">
     <img src="img/logo.svg" alt="Logo" />
-  </div>
+  </a>
   <nav class="nav">
     <div class="nav__item nav__item_relative _popup-block-container">
       <button class="nav__link _open-popup-block">Wallet</button>
@@ -17,10 +17,13 @@
             <input type="password" placeholder="Password" class="form__input">
           </div>
           <div class="wallet-form__actions">
-            <label for="checkbox" class="form__label">
-              <input id="checkbox" type="checkbox" class="form__checkbox" />
-              Remember me
-            </label>
+            <div class="form__accept">
+              <label for="remember" class="form__label form__label_font-size-14 checkbox">
+                Remember me
+                <input id="remember" type="checkbox">
+                <span class="checkbox__checkmark"></span>
+              </label>
+            </div>
             <a href="#" class="wallet-form__forgot-link">Forgot password</a>
           </div>
           <div class="popup-block__button">

@@ -6,26 +6,28 @@
   <form class="form exchange-form">
     <div class="grid grid_margin-bottom">
       <div class="grid__col">
-        <div class="form__item">
-          <select class="form__select select">
-            <option>
+        <div class="form__item select-container select-container_violet-arrow">
+          <select class="form__select select" name="state">
+            <option value="btc">
               Bitcoin
             </option>
-            <option>
-              Bitcoin
+            <option value="eth">
+              ETH
             </option>
-            <option>
+            <option value="3">
               Bitcoin
             </option>
           </select>
         </div>
-        <div class="form__item">
-          <input type="number" class="form__input" placeholder="Amount in €" />
+        <div class="form__item form__item_with-content">
+          <span class="form__content">Amount in €</span>
+          <input type="text" class="form__input form__input_alt" placeholder="" />
         </div>
       </div>
       <div class="grid__col">
-        <div class="form__item">
-          <input type="number" class="form__input" placeholder="You`ll get:" />
+        <div class="form__item form__item_with-content">
+          <span class="form__content">You`ll get:</span>
+          <input type="text" disabled class="form__input form__input_alt" placeholder="" />
         </div>
         <div class="form__item">
           <input type="email" class="form__input" placeholder="Email" />
@@ -37,9 +39,10 @@
         Exchange
       </button>
       <div class="form__accept form__accept_margin-right">
-        <label for="accept" class="form__label">
-          <input id="accept" type="checkbox" class="form__checkbox" />
+        <label for="accept" class="form__label checkbox">
           I accept Terms&Conditions and Privacy Policy
+          <input id="accept" type="checkbox">
+          <span class="checkbox__checkmark"></span>
         </label>
       </div>
     </div>

@@ -46,3 +46,46 @@ for (var i = 0; i < accordion.length; i++) {
     }
   });
 }
+
+var actionsBtn = document.querySelectorAll('.block__action-btn');
+
+actionsBtn.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    actionsBtn.forEach(function(elem) {
+      if (elem.classList.contains('block__action-btn_active')) {
+        elem.classList.remove('block__action-btn_active');
+      }
+    });
+    btn.classList.add('block__action-btn_active');
+  });
+});
+
+var dataBtns = document.querySelectorAll('.data__name');
+var dataIndicators = document.querySelectorAll('.data__indicator');
+
+dataBtns.forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    dataBtns.forEach(function(elem) {
+      if (elem.classList.contains('data__name_active')) {
+        elem.classList.remove('data__name_active');
+      }
+    });
+    dataIndicators.forEach(function(elem) {
+      if (elem.classList.contains('data__indicator_active')) {
+        elem.classList.remove('data__indicator_active');
+      }
+    });
+    var parent = e.target.closest(".data");
+    var indicator = parent.querySelector('.data__indicator');
+    btn.classList.add('data__name_active');
+    indicator.classList.add('data__indicator_active');
+  });
+});
+
+$(document).ready(function() {
+  if ($('.select').length) {
+    $('.select').select2({
+      minimumResultsForSearch: Infinity
+    });
+  }
+});

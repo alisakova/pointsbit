@@ -1,0 +1,102 @@
+.card-form {
+  background: $dashboard-blue;
+  box-shadow: 0 12px 19px rgba(28, 127, 255, 0.34);
+  border-radius: 9px;
+  width: rem(326);
+  height: rem(198);
+  padding: rem(24 24 27 42);
+  &_front {
+    position: relative;
+    z-index: 2;
+  }
+  &_back {
+    position: absolute;
+    z-index: 1;
+    top: rem(57);
+    left: rem(70);
+    display: flex;
+    justify-content: flex-end;
+    padding-top: rem(70);
+  }
+}
+
+.card-form__logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: rem(43);
+}
+
+.card-form__inputs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: rem(40);
+}
+
+.card-form__input {
+  border-bottom: 1px solid #fff;
+  font: {
+    size: 12px;
+    weight: 600;
+  }
+  width: rem(35);
+  color: #fff;
+  &_margin-right {
+    margin-right: rem(20);
+  }
+  &_cvv {
+    width: rem(26);
+  }
+  &_small {
+    width: rem(20);
+  }
+}
+
+.card-form__input-name {
+  font: {
+    size: rem(18);
+    weight: 600;
+  }
+  color: #fff;
+  width: 100%;
+  @include input-placeholder {
+    font: {
+      size: rem(18);
+      weight: 600;
+    }
+    color: #fff;
+  }
+}
+
+.card-form__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-form__item {
+  color: #fff;
+  &_flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  &_max-width {
+    max-width: 70%;
+  }
+}
+
+.card-form__divider {
+  margin: 0 rem(5);
+  line-height: 1;
+}
+
+.card-form__label {
+  opacity: 0.49;
+  margin-right: 8px;
+  font: {
+    size: 6px;
+    weight: 700;
+  }
+  text-transform: uppercase;
+}

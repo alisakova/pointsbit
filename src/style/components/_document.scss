@@ -1,0 +1,26 @@
+.document {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: $roboto;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: rem(24);
+  &:not(:first-child) {
+    padding-top: rem(23);
+  }
+}
+
+.document__title {
+  font: {
+    size: rem(18);
+    weight: 500;
+  }
+  max-width: 27%;
+  min-width: 27%;
+  // margin-right: rem(148);
+}
+
+.document__progress {
+  margin-right: rem(64);
+  flex-grow: 1;
+}

@@ -1,0 +1,13 @@
+$dashboard-bg: #f7f9fb;
+
+.dashboard {
+  flex-grow: 1;
+  background-color: $dashboard-bg;
+  padding: rem(30);
+}
+
+.dashboard__block-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}

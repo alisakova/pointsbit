@@ -2,6 +2,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: rem(38);
+  &_padding-top {
+    padding-top: rem(38);
+    padding-bottom: 0;
+  }
 }
 
 .nav__item {
@@ -18,6 +23,7 @@
   color: $gray;
   font-size: rem(20);
   font-family: $main-font;
+  transition: color 250ms;
   &:hover, &:focus {
     color: darken($gray, 20%);
   }
