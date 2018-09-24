@@ -1,10 +1,18 @@
 .wallet-form {
-  top: rem(35);
-  right: 0;
+  top: rem(30);
+  right: rem(-13);
+  .form__input {
+    padding-bottom: 0.6rem;
+  }
+  .form__item {
+    &:nth-child(2) {
+      margin-bottom: rem(43);
+    }
+  }
 }
 
 .wallet-form__actions {
-  margin-bottom: rem(63);
+  margin-bottom: rem(60);
   display: flex;
   justify-content: space-between;
   align-items: center;

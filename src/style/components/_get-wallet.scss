@@ -1,7 +1,10 @@
 .get-wallet {
-  bottom: rem(40);
-  right: rem(-22);
+  bottom: rem(62);
+  right: rem(-80);
   &_right-0 {
     right: 0;
+  }
+  .popup-block__title {
+    margin-bottom: rem(40);
   }
 }

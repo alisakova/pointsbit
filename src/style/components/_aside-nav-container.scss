@@ -1,5 +1,6 @@
 .aside-nav-container {
   min-height: calc(100vh - 9.9375rem);
+  min-width: rem(250);
   background: #fff;
 }
 
@@ -11,8 +12,11 @@
     family: $roboto;
     weight: 500;
   }
-  padding: rem(49 48 50 34);
+  padding: rem(50 48 50 32);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  &_small-padding-bottom {
+    padding-bottom: rem(24);
+  }
 }
 
 .aside-nav-container__link {

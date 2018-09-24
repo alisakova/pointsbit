@@ -12,6 +12,13 @@ $checkbox-border: #808495;
       top: rem(6);
     }
   }
+  &_small {
+    padding-left: rem(28);
+  }
+  &_medium {
+    padding-left: rem(56);
+    font-size: rem(16);
+  }
 }
 
 .checkbox input {
@@ -49,6 +56,16 @@ $checkbox-border: #808495;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+}
+
+.checkbox__checkmark_small {
+  width: rem(16);
+  height: rem(16);
+}
+
+.checkbox__checkmark_medium {
+  width: rem(31);
+  height: rem(31);
 }
 
 .checkbox__checkmark_big {

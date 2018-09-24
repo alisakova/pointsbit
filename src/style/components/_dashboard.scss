@@ -4,6 +4,10 @@ $dashboard-bg: #f7f9fb;
   flex-grow: 1;
   background-color: $dashboard-bg;
   padding: rem(30);
+  padding-left: rem(18);
+  &.transactions {
+    padding-left: rem(10);
+  }
 }
 
 .dashboard__block-container {

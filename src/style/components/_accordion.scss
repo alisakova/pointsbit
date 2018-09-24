@@ -2,9 +2,10 @@
   position: relative;
   cursor: pointer;
   width: 100%;
-  font-size: rem(26);
+  font-size: rem(28);
   color: $black;
-  padding-left: rem(35);
+  padding-left: rem(50);
+  letter-spacing: 0.5px;
   &.active {
     font-weight: 700;
   }
@@ -12,8 +13,8 @@
     content: '';
     background: url('../img/arrow-left.svg') no-repeat center center;
     background-size: contain;
-    width: rem(25);
-    height: rem(25);
+    width: rem(40);
+    height: rem(40);
     position: absolute;
     left: 0;
     top: 50%;
@@ -28,5 +29,5 @@
 }
 
 .accordion__content {
-  padding: rem(20 10 10 15);
+  padding: rem(35 10 10 30);
 }

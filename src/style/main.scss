@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 @import "util";
+@import "pixel-perfect.css";
 
 @font-face {
   font-family: "SegoeUiRegular";
@@ -73,6 +74,7 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+  text-align: center;
 }
 
 .container {
@@ -128,8 +130,8 @@ p {
   text-align: left;
   margin: 0;
   font: {
-    size: rem(20);
-    family: $main-font;
+    size: rem(22);
+    family: $roboto;
   }
 }
 

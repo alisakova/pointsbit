@@ -11,7 +11,10 @@
     display: block;
   }
   &.get-wallet {
-    padding-bottom: rem(95);
+    padding: {
+      bottom: rem(95);
+      top: rem(34);
+    }
   }
 }
 
@@ -22,7 +25,7 @@
     family: $segoe-light;
   }
   color: #43425d;
-  margin-bottom: rem(45);
+  margin-bottom: rem(46);
   text-align: center;
   letter-spacing: 5px;
   line-height: 1.2;

@@ -16,21 +16,24 @@
     left: rem(70);
     display: flex;
     justify-content: flex-end;
-    padding-top: rem(70);
+    padding: {
+      top: rem(70);
+      right: rem(18);
+    }
   }
 }
 
 .card-form__logo {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: rem(43);
+  margin-bottom: rem(49);
 }
 
 .card-form__inputs {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: rem(40);
+  margin-bottom: rem(38);
 }
 
 .card-form__input {
@@ -48,7 +51,7 @@
     width: rem(26);
   }
   &_small {
-    width: rem(20);
+    width: rem(18);
   }
 }
 
@@ -71,7 +74,7 @@
 .card-form__block {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .card-form__item {
@@ -80,6 +83,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    margin-right: rem(15);
   }
   &_max-width {
     max-width: 70%;
@@ -87,7 +91,7 @@
 }
 
 .card-form__divider {
-  margin: 0 rem(5);
+  margin: 0;
   line-height: 1;
 }
 

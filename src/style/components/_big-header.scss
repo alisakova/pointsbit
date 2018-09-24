@@ -3,11 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding: rem(79 108 133 38);
-  &_padding-bottom-36 {
-    padding-bottom: rem(36);
-  }
   &_padding {
     padding: rem(79 108 20 38);
+  }
+  &_padding-bottom-36 {
+    padding-bottom: rem(36);
   }
 }
 

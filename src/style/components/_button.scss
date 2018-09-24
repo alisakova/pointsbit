@@ -1,6 +1,9 @@
 .button {
+  text-align: center;
+  display: block;
   background: $bright-blue;
   padding: rem(19 76 22);
+  min-width: rem(273);
   font-size: rem(24);
   color: #fff;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
@@ -18,8 +21,8 @@
   &_margin-left-81 {
     margin-left: rem(81);
   }
-  &_margin-bottom-26 {
-    margin-bottom: rem(26);
+  &_margin-bottom-23 {
+    margin-bottom: rem(23);
   }
   &_font-size-34 {
     font: {

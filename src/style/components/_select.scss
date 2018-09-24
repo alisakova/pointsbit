@@ -4,7 +4,7 @@
       border: none;
       border-bottom: 2px solid $light-gray;
       border-radius: 0;
-      padding: rem(2 30 6 5);
+      padding: rem(0 30 10 8);
       background: transparent;
     }
   }
@@ -21,7 +21,7 @@
         .select2-selection__arrow {
           width: rem(22);
           b {
-            left: -5px;
+            left: -6px;
             transform: translateY(-50%);
             margin-left: 0;
             border-width: 11px 10px 0 10px;
@@ -39,7 +39,7 @@
     }
   }
   &_green-arrow {
-    width: rem(134);
+    width: rem(170);
     .select2-container {
       min-width: rem(140);
     }
@@ -47,6 +47,7 @@
       .select2-selection--single {
         border: none;
         padding-right: rem(48);
+        padding-left: 0;
         .select2-selection__rendered {
           color: $green;
           font: {
@@ -74,6 +75,49 @@
         .select2-selection__arrow
         b {
         border-width: 0 18px 24px 18px;
+        border-color: transparent transparent $green transparent;
+      }
+    }
+  }
+
+  &_gray-arrow {
+    width: rem(80);
+    .select2-container {
+      min-width: rem(80);
+    }
+    .select2-container--default {
+      .select2-selection--single {
+        border: none;
+        padding-right: rem(48);
+        padding-left: 0;
+        .select2-selection__rendered {
+          font: {
+            size: rem(26);
+            family: $roboto;
+            weight: 400;
+          }
+          color: $block-color;
+          padding: 0;
+        }
+        .select2-selection__arrow {
+          width: rem(20);
+          top: 50%;
+          transform: translateY(-50%);
+          b {
+            left: 0;
+            top: 2px;
+            margin-left: 0;
+            margin-top: 0;
+            border-width: 11px 10px 0 10px;
+            border-color: $green transparent transparent transparent;
+          }
+        }
+      }
+      &.select2-container--open
+        .select2-selection--single
+        .select2-selection__arrow
+        b {
+        border-width: 0 10px 11px 10px;
         border-color: transparent transparent $green transparent;
       }
     }

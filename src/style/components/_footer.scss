@@ -3,7 +3,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: rem(0 108 50 38);
+  padding: rem(0 74 50 38);
   &_justify-flex-start {
     justify-content: flex-start;
     padding: {
@@ -25,6 +25,7 @@
   }
   color: $gray;
   line-height: 1.2;
+  letter-spacing: 0.8px;
   text-align: center;
   margin: {
     top: rem(16);

@@ -11,6 +11,7 @@
   text-align: right;
   margin-bottom: rem(90);
   max-width: rem(1148);
+  line-height: 1.33;
 }
 
 .first-slide__button {
@@ -21,7 +22,7 @@
   }
   &_alt {
     text-align: right;
-    margin: 0 rem(-25) rem(26) auto;
+    margin: 0 rem(-77) rem(22) 0;
     display: block;
     color: $bright-blue;
     &:hover, &:focus {
@@ -31,11 +32,14 @@
 }
 
 .first-slide__actions {
-  padding-right: rem(104);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: rem(78);
 }
 
 .first-slide__content {
-  padding: rem(79 108 0 38);
+  padding: rem(0 128 0 38);
   @media (min-width: 1980px) {
     width: 100%;
   }
@@ -48,9 +52,11 @@
 }
 
 .first-slide__link {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
   &_inline-block {
     display: inline-block;
-    margin-right: rem(114);
+    margin-right: rem(118);
   }
 }

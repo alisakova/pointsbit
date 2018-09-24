@@ -1,12 +1,12 @@
 .exchange__form {
   padding: {
-    right: rem(89);
-    left: rem(843);
+    right: rem(84);
+    left: rem(803);
   }
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: rem(42);
+  margin-bottom: rem(45);
 }
 
 .exchange__title {
@@ -17,12 +17,12 @@
   }
   color: $purple;
   margin-bottom: rem(75);
-  padding-right: rem(191);
+  padding-right: rem(204);
 }
 
 .exchange__subtitle {
   font-size: rem(17);
   color: $purple;
-  margin-bottom: rem(63);
+  margin-bottom: rem(68);
   align-self: flex-start;
 }

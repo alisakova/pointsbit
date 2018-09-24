@@ -1,11 +1,11 @@
 .user-docs {
   border: 1px solid #707070;
-  padding: rem(17 74 32 43);
+  padding: rem(17 72 27 41);
   display: flex;
   justify-content: space-between;
   align-items: center;
   &:not(:last-child) {
-    margin-bottom: rem(20);
+    margin-bottom: rem(18);
   }
 }
 
@@ -15,10 +15,10 @@
   align-items: center;
   width: 100%;
   &:first-child {
-    max-width: 42.71%;
+    max-width: 43%;
   }
   &:last-child {
-    max-width: 34.95%;
+    max-width: 31.2%;
   }
 }
 
@@ -27,7 +27,10 @@
     size: rem(15);
   }
   color: #0f0a30;
-  margin-right: rem(10);
+  margin: {
+    top: rem(7);
+    right: rem(10);
+  }
 }
 
 .user-docs__col {
@@ -35,6 +38,11 @@
   color: #767791;
   &:not(:last-child) {
     margin-right: rem(10);
+  }
+  &_documents {
+    &:not(:last-child) {
+      margin-right: rem(44);
+    }
   }
 }
 

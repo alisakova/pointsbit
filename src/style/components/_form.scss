@@ -10,7 +10,7 @@
   color: #43425d;
   font: {
     size: rem(15);
-    family: $roboto;
+    family: $main-font;
   }
 }
 
@@ -19,15 +19,18 @@ select, input {
 }
 
 .form__item {
-  margin-bottom: rem(44);
+  margin-bottom: rem(46);
   &_with-content {
     border-bottom: 2px solid $light-gray;
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
   }
-  &_margin-bottom-34 {
-    margin-bottom: rem(34);
+  &_margin-bottom-36 {
+    margin-bottom: rem(36);
+    &:nth-child(2) {
+      margin-bottom: rem(30);
+    }
   }
   &_flex {
     display: flex;
@@ -37,6 +40,10 @@ select, input {
       max-width: rem(200);
     }
   }
+  &_alt {
+    border-top: 3px solid $border-color;
+    margin: 0 rem(30) rem(38);
+  }
 }
 
 .form__button {
@@ -45,18 +52,19 @@ select, input {
 }
 
 .form__content {
-  padding: rem(2 5 6 5);
+  padding: rem(0 5 8 8);
   line-height: 1.2;
   white-space: nowrap;
   @extend %default-text;
   &_font-size-19 {
     font-size: rem(19);
+    padding-bottom: rem(13);
   }
 }
 
 .form__input {
   width: 100%;
-  padding: rem(2 5 6 5);
+  padding: rem(2 5 8 9);
   border-bottom: 2px solid $light-gray;
   @extend %default-text;
   @include input-placeholder {
@@ -101,7 +109,7 @@ select, input {
   &_flex-end {
     display: flex;
     justify-content: flex-end;
-    margin-right: rem(-50);
+    margin-right: rem(-82);
   }
 }
 

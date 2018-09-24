@@ -5,13 +5,13 @@ $active-tab-color: #3fc8ff;
   background: #fff;
   display: flex;
   justify-content: space-between;
-  margin-bottom: rem(28);
-  padding-left: rem(40);
+  margin-bottom: rem(35);
+  padding-left: rem(52);
 }
 
 .tabs__tab {
   color: $gray;
-  padding: rem(25 0 50);
+  padding: rem(28 0 53);
   text-align: center;
   width: calc(100% / 3);
   position: relative;
@@ -19,7 +19,9 @@ $active-tab-color: #3fc8ff;
   font: {
     size: rem(24);
     weight: 500;
+    family: $roboto;
   }
+  letter-spacing: 1px;
   &.active {
     color: $black;
     font-weight: 700;
@@ -38,7 +40,7 @@ $active-tab-color: #3fc8ff;
 .tabs__content {
   margin-left: rem(28);
   background: #fff;
-  padding: 1em 1.4em;
+  padding: rem(22 32);
   font-size: rem(20);
   &_long-text {
     font-size: rem(14);
@@ -52,6 +54,6 @@ $active-tab-color: #3fc8ff;
 
 .tabs__content-item {
   &:not(:last-child) {
-    margin-bottom: rem(20);
+    margin-bottom: rem(42);
   }
 }
