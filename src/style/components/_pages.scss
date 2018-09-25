@@ -2,4 +2,7 @@
   font-size: rem(24);
   white-space: nowrap;
   margin-top: rem(8);
+  @media (max-width: 768px) {
+    color: #fff;
+  }
 }

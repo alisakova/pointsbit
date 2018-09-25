@@ -16,6 +16,14 @@
   &_big-padding-bottom {
     padding-bottom: rem(32);
   }
+  @media (max-width: 1080px) {
+    max-width: rem(400);
+    margin: 0 auto rem(20);
+  }
+  @media (min-width: 1501px) and (max-width: 1700px) {
+    max-width: rem(200);
+    margin: 0 auto rem(20);
+  }
 }
 
 .wallet-balance__title {
@@ -37,6 +45,9 @@
   text-transform: uppercase;
   &_margin-bottom-0 {
     margin-bottom: 0;
+  }
+  @media (min-width: 1501px) and (max-width: 1700px) {
+    font-size: rem(22);
   }
 }
 

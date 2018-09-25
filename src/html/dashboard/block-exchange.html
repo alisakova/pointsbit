@@ -2,7 +2,19 @@
   <header class="block__header block__header_exchange">
     <div class="block__title block__title_flex">
       <h2>Exchange</h2>
-      <select>BTC</select>
+      <div class="select-container select-container_margin-left select-container_gray-arrow select-container_light-gray-arrow">
+        <select class="select" name="state">
+          <option value="btc">
+            BTC
+          </option>
+          <option value="eth">
+            ETH
+          </option>
+          <option value="3">
+            BTC
+          </option>
+        </select>
+      </div>
     </div>
     <div class="block__actions">
       <button class="block__reload-btn">
@@ -14,55 +26,77 @@
     </div>
   </header>
   <div class="block__body block__body_flex">
-    <div class="block__form">
-      <div class="card-form card-form_front">
-        <div class="card-form__logo">
-          <img src="img/visa-logo.svg" alt="Visa logo">
-        </div>
-        <form class="card-form__form">
-          <div class="card-form__inputs">
-            <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
-            <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
-            <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
-            <input type="text" required maxlength="4" class="card-form__input">
+    <div class="block__two-col">
+      <div class="block__form _form _card active">
+        <div class="card-form card-form_front">
+          <div class="card-form__logo">
+            <img src="img/visa-logo.svg" alt="Visa logo">
           </div>
-          <div class="card-form__block">
-            <div class="card-form__item card-form__item_max-width">
-              <input type="text" required placeholder="Name Name" class="card-form__input-name"/>
+          <form class="card-form__form">
+            <div class="card-form__inputs">
+              <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+              <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+              <input type="text" required maxlength="4" class="card-form__input card-form__input_margin-right">
+              <input type="text" required maxlength="4" class="card-form__input">
             </div>
-            <div class="card-form__item card-form__item_flex">
-              <div class="card-form__label">
-                valid<br />
-                thru
+            <div class="card-form__block">
+              <div class="card-form__item card-form__item_max-width">
+                <input type="text" required placeholder="Name Name" class="card-form__input-name"/>
               </div>
-              <input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small"/>
-              <span class="card-form__divider">/</span>
-              <input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small"/>
+              <div class="card-form__item card-form__item_flex">
+                <div class="card-form__label">
+                  valid<br />
+                  thru
+                </div>
+                <input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small"/>
+                <span class="card-form__divider">/</span>
+                <input type="text" required placeholder="" maxlength="2" class="card-form__input card-form__input_small"/>
+              </div>
             </div>
+          </form>
+        </div>
+        <div class="card-form card-form_back">
+          <div class="card-form__item">
+            <div class="card-form__cvv">
+              cvv
+            </div>
+            <input type="text" required placeholder="" maxlength="3" class="card-form__input card-form__input_cvv"/>
           </div>
-        </form>
-      </div>
-      <div class="card-form card-form_back">
-        <div class="card-form__item">
-          <div class="card-form__cvv">
-            cvv
-          </div>
-          <input type="text" required placeholder="" maxlength="3" class="card-form__input card-form__input_cvv"/>
         </div>
       </div>
-    </div>
-    <div class="block__datas">
-      <div class="data">
-        <div class="data__indicator data__indicator_active"></div>
-        <button class="data__name data__name_active">Credit card</button>
+      <div class="block__form address-data _form _address">
+        <div class="address-data__item">
+          <input type="text" class="address-data__input" placeholder="Data">
+        </div>
+        <div class="address-data__item">
+          <input type="text" class="address-data__input" placeholder="Data">
+        </div>
+        <div class="address-data__item">
+          <input type="text" class="address-data__input" placeholder="Data">
+        </div>
+        <div class="address-data__item">
+          <input type="text" class="address-data__input" placeholder="Data">
+        </div>
+        <div class="address-data__item">
+          <input type="text" class="address-data__input" placeholder="Data">
+        </div>
+        <div class="address-data__item">
+          <input type="text" class="address-data__input" placeholder="Data">
+        </div>
       </div>
-      <div class="data">
-        <div class="data__indicator"></div>
-        <button class="data__name">Address</button>
-      </div>
-      <div class="data">
-        <div class="data__indicator"></div>
-        <button class="data__name">Personal data</button>
+      <div class="block__datas">
+        <div class="data">
+          <div class="data__indicator data__indicator_active"></div>
+          <button class="data__name data__name_active _card-btn">Credit card</button>
+        </div>
+        <div class="data">
+          <div class="data__indicator"></div>
+          <button class="data__name _address-btn">Address</button>
+        </div>
+        <div class="data">
+          <div class="data__indicator"></div>
+          <button class="data__name _data-btn">Personal data</button>
+        </div>
       </div>
     </div>
     <div class="block__exchange-form">

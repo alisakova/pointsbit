@@ -66,6 +66,13 @@ $checkbox-border: #808495;
 .checkbox__checkmark_medium {
   width: rem(31);
   height: rem(31);
+  &:after {
+    width: rem(10);
+    height: rem(18);
+    left: 50%;
+    top: 1px;
+    transform: translateX(-50%) rotate(45deg);
+  }
 }
 
 .checkbox__checkmark_big {

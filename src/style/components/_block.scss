@@ -4,17 +4,31 @@
   font-family: $roboto;
   margin-bottom: rem(30);
   &:first-child {
-    margin-right: rem(15);
+    @media (min-width: 1080px) {
+      margin-right: rem(15);
+    }
   }
   &:last-child {
-    margin-left: rem(15);
+    @media (min-width: 1080px) {
+      margin-left: rem(15);
+    }
+  }
+  @media (max-width: 1080px) {
+    width: 100%;
   }
   &_big {
-    // max-width: rem(1216);
     flex-grow: 1;
   }
   &_small {
     max-width: rem(364);
+    @media (max-width: 1080px) {
+      max-width: none;
+    }
+    .block__header {
+      @media (min-width: 1501px) and (max-width: 1700px) {
+        padding-right: rem(10);
+      }
+    }
   }
   &_box-shadow {
     height: 100%;
@@ -29,7 +43,7 @@
 
 .block__header {
   border-bottom: 1px solid #e0e3da;
-  padding: rem(26 30 30 33);
+  padding: rem(27 30 30 28);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -45,9 +59,18 @@
   }
   &_big-padding-right {
     padding-right: rem(100);
+    @media (max-width: 475px) {
+      padding-right: rem(30);
+    }
   }
   &_exchange {
     padding-right: rem(152);
+    @media (max-width: 1080px) {
+      padding-right: rem(100);
+    }
+    @media (max-width: 475px) {
+      padding-right: rem(30);
+    }
   }
 }
 
@@ -111,6 +134,12 @@
     }
     display: flex;
     justify-content: flex-start;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 475px) {
+      padding: rem(16 10 50);
+    }
   }
   &_padding-top-0 {
     padding-top: 0;
@@ -123,6 +152,12 @@
   }
   &_wallet-balance {
     padding: rem(45 38 10 56);
+    @media (min-width: 1501px) and (max-width: 1700px) {
+      padding: {
+        left: rem(20);
+        right: rem(20);
+      }
+    }
   }
 }
 
@@ -155,6 +190,29 @@
     top: rem(30);
     right: rem(95);
   }
+  display: none;
+  &.active {
+    display: block;
+  }
+  @media (max-width: 475px) {
+    margin: rem(30) auto rem(115);
+  }
+  @media (max-width: 375px) {
+    margin-left: 0;
+  }
+}
+
+.block__two-col {
+  display: flex;
+  @media (max-width: 900px) {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 35rem;
+    width: 100%;
+  }
+  @media (max-width: 475px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .block__datas {
@@ -162,10 +220,25 @@
     right: rem(48);
     top: rem(2);
   }
+  @media (max-width: 900px) {
+    margin-right: 0;
+  }
+  @media (max-width: 475px) {
+    display: flex;
+    align-items: stretch;
+  }
 }
 
 .block__exchange-form {
   margin-top: rem(56);
   max-width: rem(507);
   flex-grow: 1;
+  @media (max-width: 900px) {
+    margin: 7.5rem auto 0;
+    width: 100%;
+    margin-top: 7.5rem;
+  }
+  @media (max-width: 475px) {
+    margin-top: 0;
+  }
 }

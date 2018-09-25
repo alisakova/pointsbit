@@ -9,6 +9,9 @@
   &_padding-bottom-36 {
     padding-bottom: rem(36);
   }
+  @media (max-width: 800px) {
+    padding: rem(50 50 50 38);
+  }
 }
 
 .big-header__logo {

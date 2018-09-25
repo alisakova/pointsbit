@@ -17,4 +17,7 @@
   &:not(:last-child) {
     margin-bottom: rem(9);
   }
+  @media (max-width: 768px) {
+    background: #fff;
+  }
 }

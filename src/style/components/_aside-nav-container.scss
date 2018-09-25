@@ -2,6 +2,9 @@
   min-height: calc(100vh - 9.9375rem);
   min-width: rem(250);
   background: #fff;
+  @media (max-width: 660px) {
+    display: none;
+  }
 }
 
 .aside-nav-container__user {

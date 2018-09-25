@@ -20,6 +20,9 @@
   }
   &_margin-left-81 {
     margin-left: rem(81);
+    @media (max-width: 900px) {
+      margin: 0 auto rem(23);
+    }
   }
   &_margin-bottom-23 {
     margin-bottom: rem(23);

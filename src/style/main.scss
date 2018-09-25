@@ -75,6 +75,7 @@ button {
   padding: 0;
   cursor: pointer;
   text-align: center;
+  font-family: $main-font;
 }
 
 .container {
@@ -91,16 +92,24 @@ h1 {
   }
   line-height: 1.2;
   margin: 0;
+  @media (max-width: 1280px) {
+    font-size: rem(50);
+  }
+  @media (max-width: 988px) {
+    font-size: rem(40);
+  }
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    font-size: rem(58);
+  }
+  @media (max-width: 600px) {
+    font-size: rem(44);
+  }
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.dashboard-wrapper {
-  display: flex;
 }
 
 .withdraw-container {
@@ -111,8 +120,19 @@ h1 {
   justify-content: space-between;
 }
 
+.dashboard-wrapper {
+  display: flex;
+}
+
 .content {
   flex: 1 0 auto;
+  &.index {
+    @media (max-width: 1024px) and (max-height: 1366px) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
 }
 
 h2 {
@@ -154,15 +174,15 @@ img {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 12px;
-  }
-}
+// @media (max-width: 1080px) {
+//   html {
+//     font-size: 12px;
+//   }
+// }
 
 // @media (min-width: 1600px) {
 // 	html {
@@ -215,3 +235,4 @@ img {
 @import "components/checkbox";
 @import "components/withdraw-block";
 @import "components/user-docs";
+@import "components/address-data";

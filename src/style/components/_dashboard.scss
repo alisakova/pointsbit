@@ -1,10 +1,10 @@
 $dashboard-bg: #f7f9fb;
 
 .dashboard {
+  width: 100%;
   flex-grow: 1;
   background-color: $dashboard-bg;
-  padding: rem(30);
-  padding-left: rem(18);
+  padding: rem(30 30 30 28);
   &.transactions {
     padding-left: rem(10);
   }
@@ -14,4 +14,7 @@ $dashboard-bg: #f7f9fb;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  @media (max-width: 1080px) {
+    flex-wrap: wrap;
+  }
 }

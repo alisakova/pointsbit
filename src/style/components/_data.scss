@@ -6,6 +6,18 @@ $data-active-color: #0f9af8;
 .data {
   &:not(:last-child) {
     margin-bottom: rem(8);
+    @media (max-width: 475px) {
+      margin-bottom: 0;
+      margin-right: rem(30);
+    }
+  }
+  @media (min-width: 1501px) and (max-width: 1700px) {
+    min-width: rem(90);
+  }
+  @media (max-width: 475px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 

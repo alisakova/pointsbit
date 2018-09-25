@@ -61,14 +61,23 @@ actionsBtn.forEach(function(btn) {
   });
 });
 
-var dataBtns = document.querySelectorAll(".data__name");
+var dataBtns = document.querySelectorAll(".data");
 var dataIndicators = document.querySelectorAll(".data__indicator");
+var forms = document.querySelectorAll('._form');
+var cardForm = document.querySelector('._card');
+var addressForm = document.querySelector('._address');
 
 dataBtns.forEach(function(btn) {
   btn.addEventListener("click", function(e) {
     dataBtns.forEach(function(elem) {
-      if (elem.classList.contains("data__name_active")) {
-        elem.classList.remove("data__name_active");
+      var elemName = elem.querySelector('.data__name');
+      if (elemName.classList.contains("data__name_active")) {
+        elemName.classList.remove("data__name_active");
+      }
+    });
+    forms.forEach(function(elem) {
+      if (elem.classList.contains("active")) {
+        elem.classList.remove("active");
       }
     });
     dataIndicators.forEach(function(elem) {
@@ -78,10 +87,18 @@ dataBtns.forEach(function(btn) {
     });
     var parent = e.target.closest(".data");
     var indicator = parent.querySelector(".data__indicator");
-    btn.classList.add("data__name_active");
+    var elemName = btn.querySelector('.data__name');
+    elemName.classList.add("data__name_active");
     indicator.classList.add("data__indicator_active");
+    if (elemName.classList.contains("_card-btn")) {
+      cardForm.classList.add('active');
+    }
+    if (elemName.classList.contains("_address-btn")) {
+      addressForm.classList.add('active');
+    }
   });
 });
+
 
 $(document).ready(function() {
   if ($(".select").length) {
