@@ -7,6 +7,15 @@
   &:not(:last-child) {
     margin-bottom: rem(18);
   }
+  @media (max-width: 600px) {
+    padding: {
+      left: rem(15);
+      right: rem(15);
+    }
+  }
+  @media (max-width: 540px) {
+    
+  }
 }
 
 .user-docs__info {
@@ -16,6 +25,9 @@
   width: 100%;
   &:first-child {
     max-width: 43%;
+    @media (max-width: 990px) {
+      max-width: 60%;
+    }
   }
   &:last-child {
     max-width: 31.2%;
@@ -31,6 +43,8 @@
     top: rem(7);
     right: rem(10);
   }
+  @media (max-width: 540px) {
+  }
 }
 
 .user-docs__col {
@@ -42,6 +56,9 @@
   &_documents {
     &:not(:last-child) {
       margin-right: rem(44);
+      @media (max-width: 600px) {
+        margin-right: rem(10);
+      }
     }
   }
 }

@@ -7,6 +7,15 @@ $dashboard-bg: #f7f9fb;
   padding: rem(30 30 30 28);
   &.transactions {
     padding-left: rem(10);
+    @media (max-width: 768px) {
+      padding-right: rem(10);
+    }
+  }
+  @media (max-width: 540px) {
+    padding: {
+      left: rem(15);
+      right: rem(15);
+    }
   }
 }
 

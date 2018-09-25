@@ -3,9 +3,30 @@
   justify-content: flex-start;
   align-items: center;
   padding-bottom: rem(40);
+  &_desktop {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
   &_padding-top {
     padding-top: rem(38);
     padding-bottom: 0;
+  }
+  &_direction-column {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    .nav__item {
+      &:not(:last-child) {
+        margin: {
+          right: 0;
+          bottom: rem(30);
+        }
+      }
+    }
+    .nav__link {
+      font-size: rem(30);
+    }
   }
 }
 

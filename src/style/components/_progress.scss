@@ -5,6 +5,10 @@ $progress-waiting-bg: #eaeaea;
   max-width: rem(348);
   width: 100%;
   margin-top: rem(5);
+  @media (max-width: 475px) {
+    max-width: none;
+    margin-top: 0;
+  }
 }
 
 .progress__line {

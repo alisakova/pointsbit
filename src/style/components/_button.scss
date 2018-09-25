@@ -9,11 +9,12 @@
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
   border-radius: rem(37);
   transition: box-shadow 250ms;
+  line-height: 1.2;
   &:hover, &:focus {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   }
-  &_margin-bottom-33 {
-    margin-bottom: rem(33);
+  &_margin-bottom-30 {
+    margin-bottom: rem(30);
   }
   &_margin-right-45 {
     margin-right: rem(-45);

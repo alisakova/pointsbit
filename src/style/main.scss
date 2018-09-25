@@ -118,10 +118,22 @@ h1 {
   padding: rem(11 18 158 0);
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1500px) {
+    padding-left: rem(18);
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: rem(60);
+  }
 }
 
 .dashboard-wrapper {
   display: flex;
+  min-height: calc(100vh - 9.9375rem);
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .content {
@@ -232,6 +244,8 @@ img {
 @import "components/card-form";
 @import "components/wallet-balance";
 @import "components/table";
+@import "components/menu";
+@import "components/burger";
 @import "components/checkbox";
 @import "components/withdraw-block";
 @import "components/user-docs";

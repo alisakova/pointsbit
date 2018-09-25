@@ -2,8 +2,11 @@
   min-height: calc(100vh - 9.9375rem);
   min-width: rem(250);
   background: #fff;
-  @media (max-width: 660px) {
-    display: none;
+  // @media (max-width: 660px) {
+  //   display: none;
+  // }
+  @media (max-width: 768px) {
+    min-height: 0;
   }
 }
 
@@ -19,6 +22,9 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   &_small-padding-bottom {
     padding-bottom: rem(24);
+  }
+  @media (max-width: 768px) {
+    padding: rem(30 20 30 32);
   }
 }
 

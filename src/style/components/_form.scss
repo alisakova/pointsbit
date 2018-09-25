@@ -43,6 +43,9 @@ select, input {
   &_alt {
     border-top: 3px solid $border-color;
     margin: 0 rem(30) rem(38);
+    @media (max-width: 540px) {
+      margin: 0 0 rem(38);
+    }
   }
 }
 

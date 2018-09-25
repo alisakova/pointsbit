@@ -149,6 +149,9 @@
   }
   &_alt-padding {
     padding: rem(18 54 10 0);
+    @media (max-width: 600px) {
+      padding-right: rem(30);
+    }
   }
   &_wallet-balance {
     padding: rem(45 38 10 56);
@@ -241,4 +244,8 @@
   @media (max-width: 475px) {
     margin-top: 0;
   }
+}
+
+.block__table {
+  overflow-x: auto;
 }

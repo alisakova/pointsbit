@@ -6,7 +6,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: rem(45);
+  margin-bottom: rem(42);
+  @media (max-width: 1700px) {
+    padding-left: rem(650);
+  }
+  @media (max-width: 1500px) {
+    padding-right: 0;
+  }
 }
 
 .exchange__title {

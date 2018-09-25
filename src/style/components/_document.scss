@@ -8,6 +8,9 @@
   &:not(:first-child) {
     padding-top: rem(19);
   }
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
 }
 
 .document__title {
@@ -18,11 +21,19 @@
   max-width: 30%;
   min-width: 30%;
   // margin-right: rem(148);
+  @media (max-width: 475px) {
+    margin-bottom: rem(15);
+    max-width: none;
+    min-width: 0;
+  }
 }
 
 .document__progress {
   margin-right: rem(60);
   flex-grow: 1;
+  @media (max-width: 475px) {
+    margin-right: 0;
+  }
 }
 
 .document__button {

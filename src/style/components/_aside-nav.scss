@@ -2,6 +2,9 @@ $nav-link-color: #576271;
 
 .aside-nav {
   padding-top: rem(160);
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .aside-nav__item {

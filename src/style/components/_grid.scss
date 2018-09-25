@@ -4,6 +4,9 @@
   align-items: flex-start;
   &_margin-bottom {
     margin-bottom: rem(228);
+    @media (max-width: 1500px) {
+      margin-bottom: rem(80);
+    }
   }
 }
 
