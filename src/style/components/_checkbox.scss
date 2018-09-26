@@ -73,6 +73,9 @@ $checkbox-border: #808495;
 .checkbox__checkmark_small {
   width: 16px;
   height: 16px;
+  &:after {
+    top: 1px;
+  }
 }
 
 .checkbox__checkmark_medium {

@@ -68,7 +68,7 @@ select, input {
 
 .form__input {
   width: 100%;
-  padding: rem(2 5 8 9);
+  padding: rem(0 5 8 9);
   border-bottom: 2px solid $light-gray;
   @extend %default-text;
   @include input-placeholder {
