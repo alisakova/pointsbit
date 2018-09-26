@@ -109,7 +109,7 @@ h1 {
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  // height: 100%;
 }
 
 .withdraw-container {
@@ -136,6 +136,10 @@ h1 {
   }
 }
 
+.mobile-wrapper {
+  margin-top: 5rem;
+}
+
 .content {
   flex: 1 0 auto;
   &.index {
@@ -145,6 +149,12 @@ h1 {
       justify-content: flex-end;
     }
   }
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: rem(50 30);
 }
 
 h2 {
@@ -164,6 +174,9 @@ p {
   font: {
     size: rem(22);
     family: $roboto;
+  }
+  @media (max-width: 540px) {
+    font-size: rem(16);
   }
 }
 
@@ -250,3 +263,4 @@ img {
 @import "components/withdraw-block";
 @import "components/user-docs";
 @import "components/address-data";
+@import "components/wallet-form-mobile";

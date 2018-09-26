@@ -112,6 +112,9 @@ select, input {
 .form__accept {
   &_margin-right {
     margin-right: rem(-79);
+    @media (max-width: 1080px) {
+      margin-right: 0;
+    }
   }
   &_flex-end {
     @media (min-width: 1900px) {

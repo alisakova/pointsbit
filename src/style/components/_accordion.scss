@@ -19,6 +19,13 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: 540px) {
+      width: rem(30);
+      height: rem(30);
+    }
+  }
+  @media (max-width: 540px) {
+    font-size: rem(20);
   }
 }
 
@@ -30,4 +37,7 @@
 
 .accordion__content {
   padding: rem(35 10 10 30);
+  @media (max-width: 540px) {
+    padding-left: 0;
+  }
 }

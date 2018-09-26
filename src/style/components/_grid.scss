@@ -8,6 +8,12 @@
       margin-bottom: rem(80);
     }
   }
+  @media (max-width: 1080px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
 }
 
 .grid__col {
@@ -16,5 +22,11 @@
   margin-bottom: rem(-44);
   &:first-child {
     margin-right: rem(30);
+    @media (max-width: 475px) {
+      margin: {
+        right: 0;
+        bottom: 0;
+      }
+    }
   }
 }

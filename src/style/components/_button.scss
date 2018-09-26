@@ -18,6 +18,9 @@
   }
   &_margin-right-45 {
     margin-right: rem(-45);
+    @media (max-width: 1080px) {
+      margin-right: 0;
+    }
   }
   &_margin-left-81 {
     margin-left: rem(81);
