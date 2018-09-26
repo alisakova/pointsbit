@@ -54,6 +54,9 @@ $active-tab-color: #3fc8ff;
       left: rem(15);
       right: rem(15);
     }
+    &:last-child {
+      border-bottom-color: transparent;
+    }
   }
 }
 

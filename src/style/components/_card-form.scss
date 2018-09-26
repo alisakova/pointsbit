@@ -5,6 +5,9 @@
   width: rem(326);
   height: rem(198);
   padding: rem(24 24 27 42);
+  @media (max-width: 540px) {
+    height: rem(230);
+  }
   @media (max-width: 375px) {
     width: rem(290);
   }
