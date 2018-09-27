@@ -20,6 +20,9 @@ $nav-link-color: #576271;
   display: block;
   padding: rem(14 15 14 68);
   position: relative;
+  &:hover {
+    color: darken($nav-link-color, 30%);
+  }
   &_active {
     &:after {
       content: '';

@@ -137,7 +137,7 @@
     @media (max-width: 900px) {
       flex-wrap: wrap;
     }
-    @media (max-width: 475px) {
+    @media (max-width: 768px) {
       padding: rem(16 10 50);
     }
   }
@@ -239,7 +239,6 @@
   @media (max-width: 900px) {
     margin: 7.5rem auto 0;
     width: 100%;
-    margin-top: 7.5rem;
   }
   @media (max-width: 475px) {
     margin-top: 0;

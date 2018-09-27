@@ -6,6 +6,10 @@
       border-radius: 0;
       padding: rem(0 30 10 8);
       background: transparent;
+      .select2-selection__arrow  {
+        top: -1px;
+        height: 100%;
+      }
     }
   }
   .select2-container {

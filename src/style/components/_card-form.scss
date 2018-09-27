@@ -5,11 +5,12 @@
   width: rem(326);
   height: rem(198);
   padding: rem(24 24 27 42);
-  @media (max-width: 540px) {
+  @media (max-width: 768px) {
     height: rem(230);
+    padding: rem(15 10 18 15);
   }
-  @media (max-width: 375px) {
-    width: rem(290);
+  @media (max-width: 768px) {
+    width: 21.375rem;
   }
   &_front {
     position: relative;
@@ -40,6 +41,9 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: rem(38);
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .card-form__input {
@@ -50,14 +54,35 @@
   }
   width: rem(35);
   color: #fff;
+  text-align: center;
   &_margin-right {
     margin-right: rem(20);
+    @media (max-width: 540px) {
+      margin-right: rem(12);
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
   &_cvv {
     width: rem(26);
+    @media (max-width: 768px) {
+      width: rem(45);
+      padding: {
+        left: 0;
+        right: 0;
+      }
+    }
   }
   &_small {
     width: rem(18);
+    @media (max-width: 768px) {
+      width: rem(35);
+      padding: {
+        left: 0;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -75,12 +100,19 @@
     }
     color: #fff;
   }
+  @media (max-width: 540px) {
+    font-size: rem(16);
+    margin-right: rem(5);
+  }
 }
 
 .card-form__block {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media (max-width: 540px) {
+    align-items: center;
+  }
 }
 
 .card-form__item {
