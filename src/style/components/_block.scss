@@ -172,6 +172,13 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
 }
 
 .block__reload-btn {
