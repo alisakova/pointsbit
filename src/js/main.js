@@ -22,10 +22,22 @@ if (openLinks && popupBlocks) {
     item.addEventListener("click", function(e) {
       e.stopPropagation();
     });
+    item.addEventListener("touchstart", function(e) {
+      e.stopPropagation();
+    });
   });
 }
 
 body.addEventListener("click", function(e) {
+  e.stopPropagation();
+  popupBlocks.forEach(function(item) {
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    }
+  });
+});
+
+body.addEventListener("touchstart", function(e) {
   e.stopPropagation();
   popupBlocks.forEach(function(item) {
     if (item.classList.contains("active")) {
