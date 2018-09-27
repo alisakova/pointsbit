@@ -89,7 +89,7 @@ gulp.task("fonts", function() {
 gulp.task("js:build", function() {
   gulp
     .src(path.src.js)
-    // .pipe(uglify())
+    .pipe(uglify())
     .on("error", log)
     .pipe(concat("main.min.js"))
     .pipe(gulp.dest(path.build.js))
