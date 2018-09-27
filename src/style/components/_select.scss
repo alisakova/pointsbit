@@ -130,14 +130,6 @@
             margin-top: 0;
             border-width: rem(11) rem(10) 0 rem(10);
             border-color: $block-color transparent transparent transparent;
-            @media (max-width: 1500px) {
-              top: 50%;
-              transform: translateY(-50%);
-            }
-            @media (max-width: 1440px) {
-              top: 50%;
-              transform: translateY(-50%);
-            }
           }
         }
       }
@@ -161,10 +153,6 @@
         }
         .select2-selection__arrow {
           right: rem(12);
-          @media (max-width: 1440px) {
-            top: 0;
-            transform: none;
-          }
           b {
             border-color: #828a95 transparent transparent transparent;
           }
